@@ -1,0 +1,23 @@
+{
+  "name": "pokerogue-lite",
+  "version": "1.0.0",
+  "description": "a helper launcher for pokerogue",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanMartayn/pokerogue-lite.git"
+  },
+  "author": "jordanmartayn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanMartayn/pokerogue-lite/issues"
+  },
+  "homepage": "https://github.com/jordanMartayn/pokerogue-lite#readme",
+  "devDependencies": {
+    "electron": "^30.0.8"
+  }
+}
