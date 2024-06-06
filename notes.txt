@@ -1,0 +1,2 @@
+06/06/24 - im working on addRectSizeToElem to eaisly get image of the given elements via
+ipcMain.on('capture-rect'... view bounds.

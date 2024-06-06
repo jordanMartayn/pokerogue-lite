@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'unsafe-inline' ">
     <title>pokerogue-lite</title>
     <script type="module" src="./scripts/index.js"></script>
   </head>
+
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+    }
+    .content-cs{
+      display: flex;
+      flex-flow: row;
+      border-right: solid red 2px;
+      border-bottom: solid red 2px;
+    }
+    .flexColLeft-cs{
+      display: inherit;
+      flex-flow: column;
+      border-right: solid blue 1px;
+      border-bottom: solid blue 1px;
+    }
+    .flexColRight-cs{
+      display: inherit;
+      flex-flow: column;
+      border-right: solid green 1px;
+      border-bottom: solid green 1px;
+    }
+    #rogueviewSpacer{
+      position: sticky;
+    }
+  </style>
+
   <body>
-    <div style="margin-left: 80%">
-      <h1>pokerogue-lite</h1>
-      We are using Node.js <span id="node-version"></span>,
-      Chromium <span id="chrome-version"></span>,
-      and Electron <span id="electron-version"></span>.
-      <button id="getPixelDataBtn">get pixel data</button>
+    <div id="content" class="content-cs">
+
+      <div id="flexColLeft" class="flexColLeft-cs">
+        <div id="rogueviewSpacer"></div>
+      </div>
+
+      <div id="flexColRight" class="flexColRight-cs">
+        <div>
+          <h1>pokerogue-lite</h1>
+          <!--
+          We are using Node.js <span id="node-version"></span>,
+          Chromium <span id="chrome-version"></span>,
+          and Electron <span id="electron-version"></span>.
+          -->
+    
+          <button id="captureRectBtn">capture</button>
+          <button id="dummyBtn">% Tool</button>
+
+          <div id="cursorPosPercentageReadOut">
+            screenX: ${screenX}
+            screenY: ${screenY}
+            clientX: ${clientX}
+            clientY: ${clientY}
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </body>
+
 </html>
